@@ -5,9 +5,10 @@ import { Quote } from 'lucide-react'
 import { menuItems } from "@/data/menu-data"
 import MenuCard from "./MenuCard"
 import GallerySection from "./GallerySection"
+import { useRouter } from "next/navigation"
 
 export default function Restaurant() {
-
+    const router = useRouter()
 
 
 
@@ -39,7 +40,9 @@ export default function Restaurant() {
                     </div>
                     <div>
                         <div className="items-center justify-center w-full text-center mt-14">
-                            <Button className="bg-[#B72A23] px-8 py-5 mb-4">order now</Button>
+                            <Button
+                                onClick={() => router.push("https://order.chatchefs.com/baba-chicken-a9126f07/baba-chicken-8a71dfba/menu")}
+                                className="bg-[#B72A23] px-8 py-5 mb-4">order now</Button>
                             <p>* Offers available for pickup and delivery orders only.</p>
                         </div>
                     </div>

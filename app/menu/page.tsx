@@ -1,9 +1,12 @@
+'use client'
 import React from 'react'
 import MenuCard from '../(home)/components/MenuCard'
 import { Button } from '@/components/ui/button'
 import { menu1 } from '@/data/menu-data'
+import { useRouter } from 'next/navigation'
 
 const MenuPage = () => {
+    const router = useRouter()
     return (
         <div>
             <div>
@@ -32,7 +35,9 @@ const MenuPage = () => {
                     </section>)}
                     <div>
                         <div className="items-center justify-center w-full text-center mt-14">
-                            <Button className="bg-[#B72A23] px-8 py-5 mb-4">order now</Button>
+                            <Button
+                                onClick={() => router.push("https://order.chatchefs.com/baba-chicken-a9126f07/baba-chicken-8a71dfba/menu")}
+                                className="bg-[#B72A23] px-8 py-5 mb-4">order now</Button>
                             <p>* Offers available for pickup and delivery orders only.</p>
                         </div>
                     </div>
