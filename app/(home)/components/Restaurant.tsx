@@ -1,8 +1,6 @@
 'use client'
 
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 import { Quote } from 'lucide-react'
 import { menuItems } from "@/data/menu-data"
 import MenuCard from "./MenuCard"

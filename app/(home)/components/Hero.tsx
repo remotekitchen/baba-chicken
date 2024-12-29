@@ -2,8 +2,6 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { NavMenu } from "./NavMenu"
-import { Logo } from "./Logo"
 import { ChatButton } from "./ChatButton"
 
 export default function Hero() {
