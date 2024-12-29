@@ -1,9 +1,10 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X } from 'lucide-react'
-import Link from "next/link"
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const menuItems = [
   { href: "/", label: "Home" },
@@ -12,10 +13,11 @@ const menuItems = [
   { href: "/gallery", label: "Gallery" },
   { href: "/contact", label: "Contact" },
   { href: "/jobs", label: "Jobs" },
-]
+];
 
 export function NavMenu() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname()
 
   return (
     <>
@@ -24,7 +26,8 @@ export function NavMenu() {
           <Link
             key={item.href}
             href={item.href}
-            className="text-gray-700 hover:text-red-600 transition-colors"
+            className={`text-gray-700 hover:text-red-600 transition-colors ${pathname === item.href ? "text-red-600 font-bold" : ""
+              }`}
           >
             {item.label}
           </Link>
@@ -64,7 +67,8 @@ export function NavMenu() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="text-xl text-gray-700 hover:text-red-600 transition-colors"
+                    className={`text-xl text-gray-700 hover:text-red-600 transition-colors ${pathname === item.href ? "text-red-600 font-bold" : ""
+                      }`}
                   >
                     {item.label}
                   </Link>
@@ -75,6 +79,5 @@ export function NavMenu() {
         </AnimatePresence>
       </div>
     </>
-  )
+  );
 }
-

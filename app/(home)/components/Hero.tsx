@@ -9,12 +9,7 @@ import { ChatButton } from "./ChatButton"
 export default function Hero() {
     return (
         <div className="min-h-screen flex flex-col">
-            <header className="bg-white py-4 px-6 shadow-sm">
-                <div className="max-w-7xl mx-auto flex justify-between items-center">
-                    <Logo />
-                    <NavMenu />
-                </div>
-            </header>
+
 
             <main className="flex-1">
                 <div className="relative h-[80vh] flex items-center justify-center">

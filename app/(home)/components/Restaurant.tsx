@@ -3,70 +3,15 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Clock, Phone, Quote } from 'lucide-react'
+import { Quote } from 'lucide-react'
 import { menuItems } from "@/data/menu-data"
 import MenuCard from "./MenuCard"
-import Link from "next/link"
+import GallerySection from "./GallerySection"
 
 export default function Restaurant() {
 
 
-    const galleryItems = [
-        {
-            id: 1,
-            src: "/assets/gallery1.png",
-            alt: "Tandoori chicken with lemon",
-            title: "Tandoori Chicken"
-        },
-        {
-            id: 2,
-            src: "/assets/gallery2.png",
-            alt: "Biryani rice dish",
-            title: "Special Biryani"
-        },
-        {
-            id: 3,
-            src: "/assets/gallery3.png",
-            alt: "Spiced curry meat pieces",
-            title: "Curry Special"
-        },
-        {
-            id: 4,
-            src: "/assets/gallery4.png",
-            alt: "Wrap with french fries",
-            title: "Roll Combo"
-        },
-        {
-            id: 5,
-            src: "/assets/gallery5.png",
-            alt: "Creamy curry sauce",
-            title: "Butter Sauce"
-        },
-        {
-            id: 6,
-            src: "/assets/gallery6.png",
-            alt: "Yellow curry dish",
-            title: "Yellow Curry"
-        },
-        {
-            id: 7,
-            src: "/assets/gallery7.png",
-            alt: "Breaded cutlet",
-            title: "Crispy Cutlet"
-        },
-        {
-            id: 8,
-            src: "/assets/gallery8.png",
-            alt: "Tandoori wings",
-            title: "Tandoori Wings"
-        },
-        {
-            id: 9,
-            src: "/assets/gallery9.png",
-            alt: "Vegetable kebabs",
-            title: "Mixed Kebabs"
-        }
-    ]
+
 
 
     const testimonials: any = [
@@ -108,35 +53,7 @@ export default function Restaurant() {
 
 
             {/* Gallery Section */}
-            <section className="py-16">
-                <div className="container mx-auto px-4">
-                    <div className="text-center md:w-[800px] mx-auto mb-10">
-                        <h2 className="text-3xl font-bold text-center text-red-600 mb-2">OUR GALLERY</h2>
-                        <p>Step into our vibrant gallery showcasing the essence of Baba Chicken. From sizzling dishes to joyful moments,
-                            explore how we turn every meal into an unforgettable culinary experience.</p>
-                    </div>
-                    <div className="container mx-auto p-4">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1">
-                            {galleryItems.map((item) => (
-                                <Card key={item.id} className="rounded-none border-0">
-                                    <CardContent className="relative aspect-square p-0 transition-transform hover:scale-[0.98]">
-                                        <Image
-                                            src={item.src}
-                                            alt={item.alt}
-                                            fill
-                                            className=""
-                                            sizes="(max-width: 540px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                                        />
-                                        <div className="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                            <h3 className="text-white text-xl font-semibold">{item.title}</h3>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <GallerySection />
 
             {/* Testimonials Section */}
             <section className="bg-[#FBEEE4] px-4 py-16 md:py-24">
@@ -219,83 +136,7 @@ export default function Restaurant() {
                 </div>
             </section>
 
-            {/* Footer */}
-            <footer className="w-full bg-zinc-900 text-zinc-100 px-4 py-8">
-                <div className="container mx-auto">
-                    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                        {/* Logo and Address Section */}
-                        <div className="flex flex-col items-center md:items-start gap-4 text-center mx-auto  justify-center items-center">
-                            <Image
-                                src="/assets/logo2.png"
-                                alt="Baba Chicken Logo"
-                                width={70}
-                                height={70}
-                                className="rounded-full bg-red-600"
-                            />
-                            <div className="text-center md:text-left">
-                                <h3 className="font-bold text-xl">Baba Chicken</h3>
-                                <address className="not-italic text-sm text-zinc-400">
-                                    33442 South Fraser
-                                    <br />
-                                    Way #110, Abbotsford,
-                                    <br />
-                                    BC V2S 2B5, Canada
-                                </address>
-                            </div>
-                        </div>
 
-                        {/* Navigation Links */}
-                        <div className="text-center md:text-left">
-                            {/* <h4 className="font-semibold text-lg mb-4">Quick Links</h4> */}
-                            <nav className="flex flex-col gap-2">
-                                {["Home", "Menu", "About", "Gallery", "Contact", "Jobs"].map((item) => (
-                                    <Link
-                                        key={item}
-                                        href={`/${item.toLowerCase()}`}
-                                        className="text-zinc-400 hover:text-white transition-colors"
-                                    >
-                                        {item}
-                                    </Link>
-                                ))}
-                            </nav>
-                        </div>
-
-                        {/* Combined Operating Hours and Contact Section */}
-                        <div className="text-center md:text-left space-y-6">
-                            {/* Operating Hours */}
-                            <div>
-                                <h4 className="font-semibold text-lg mb-4">Operating Hours</h4>
-                                <div className="flex items-center justify-center md:justify-start gap-2 text-zinc-400">
-                                    <Clock className="h-4 w-4" />
-                                    <div>
-                                        <p>Monday - Friday</p>
-                                        <p>11 am - 11 pm</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Contact Information */}
-                            <div>
-                                <h4 className="font-semibold text-lg mb-4">Contact Us</h4>
-                                <div className="flex items-center justify-center md:justify-start gap-2 text-zinc-400">
-                                    <Phone className="h-4 w-4" />
-                                    <a
-                                        href="tel:604-758-2222"
-                                        className="hover:text-white transition-colors"
-                                    >
-                                        604-758-2222
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Copyright Section */}
-                    <div className="mt-8 pt-8 border-t border-zinc-800 text-center text-zinc-500 text-sm">
-                        <p>&copy; {new Date().getFullYear()} Baba Chicken. All rights reserved.</p>
-                    </div>
-                </div>
-            </footer>
         </div>
     )
 }
