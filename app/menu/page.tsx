@@ -10,7 +10,7 @@ const MenuPage = () => {
     return (
         <div>
             <div>
-                <div className='w-full relative'>
+                <div className='w-full relative '>
                     <img src="/assets/menu_banner.png" alt="" />
                     <div className='absolute top-0 left-0 bg-black w-full h-full bg-opacity-50'>
                     </div>
@@ -34,17 +34,13 @@ const MenuPage = () => {
 
                     </section>)}
                     <div>
-                        <div className="items-center justify-center w-full text-center mt-14">
+                        <div className="items-center justify-center w-full text-center mt-14 mb-8">
                             <Button
                                 onClick={() => router.push("https://order.chatchefs.com/baba-chicken-a9126f07/baba-chicken-8a71dfba/menu")}
                                 className="bg-[#B72A23] px-8 py-5 mb-4">order now</Button>
                             <p>* Offers available for pickup and delivery orders only.</p>
                         </div>
                     </div>
-
-
-
-
 
                 </div>
             </div>

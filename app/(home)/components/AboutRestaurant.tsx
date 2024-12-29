@@ -1,6 +1,9 @@
+"use client"
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 const AboutRestaurant = () => {
+    const router = useRouter()
     return (
         <div>
             <div className=" p-6">
@@ -14,8 +17,10 @@ const AboutRestaurant = () => {
                             Baba Chicken started in 1962 when S. Himmat Singh, lovingly called Baba Ji, opened a small dhaba serving authentic Punjabi food. His son, Mr. Kanwaljit Singh, introduced popular dishes like Fish Fry and Spinach Corn Roll, leading to the first Baba Restaurant in 1991. Known for its signature Baba Butter Chicken and secret masala recipes, Baba Chicken has now expanded to Chandigarh, bringing its rich legacy and flavours to more food lovers. Today, Mr. Avneet Singh carries forward the family tradition, ensuring Baba remains a beloved name in Punjabi cuisine.
                         </p>
                         <div className='flex items-start  '>
-                            <button className="px-6 py-2 bg-[#B72A23] text-white rounded-lg hover:bg-red-700">
-                                Know More
+                            <button
+                                onClick={() => router.push("https://order.chatchefs.com/baba-chicken-a9126f07/baba-chicken-8a71dfba/menu")}
+                                className="px-6 py-2 bg-[#B72A23] text-white rounded-lg hover:bg-red-700">
+                                Order now
                             </button>
                             <img src="/assets/flower.png" alt="" className='transform -translate-y-5' />
                         </div>
