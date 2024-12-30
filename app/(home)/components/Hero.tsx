@@ -3,8 +3,12 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { ChatButton } from "./ChatButton"
+import { Button } from "@/components/ui/button"
+import { useRouter } from "next/navigation"
 
 export default function Hero() {
+
+    const router = useRouter()
     return (
         <div className="min-h-screen flex flex-col">
 
@@ -55,6 +59,10 @@ export default function Hero() {
                             <h1 className="text-white text-3xl md:text-4xl font-bold">
                                 Baba Chicken Abbotsford
                             </h1>
+                            <Button
+                                className="px-8 py-6 bg-[#dc2626]"
+                                onClick={() => router.push("https://order.chatchefs.com/baba-chicken-a9126f07/baba-chicken-8a71dfba/menu")}
+                            >Order now</Button>
                         </motion.div>
                     </div>
                 </div>
