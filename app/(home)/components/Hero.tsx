@@ -60,7 +60,7 @@ export default function Hero() {
                                 Baba Chicken Abbotsford
                             </h1>
                             <Button
-                                className="px-8 py-6 bg-[#dc2626]"
+                                className="px-8 py-6 bg-[#dc2626] "
                                 onClick={() => router.push("https://order.chatchefs.com/baba-chicken-a9126f07/baba-chicken-8a71dfba/menu")}
                             >Order now</Button>
                         </motion.div>
