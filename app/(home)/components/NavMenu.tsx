@@ -21,7 +21,7 @@ export function NavMenu() {
 
   return (
     <>
-      <nav className="hidden md:flex items-center gap-8 justify-center flex-1">
+      <nav className="hidden md:flex items-center gap-20 justify-center flex-1">
         {menuItems.map((item) => (
           <Link
             key={item.href}

@@ -5,10 +5,10 @@ export function Logo() {
     return (
         <Link href="/" className="flex items-center gap-2">
             <Image
-                src="/assets/logo.png"
+                src="/logo.png"
                 alt="Baba's Logo"
-                width={40}
-                height={40}
+                width={70}
+                height={70}
                 className="w-[80px] "
             />
         </Link>

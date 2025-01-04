@@ -33,7 +33,13 @@ const Footer = () => {
                     <div className="text-center md:text-left">
                         {/* <h4 className="font-semibold text-lg mb-4">Quick Links</h4> */}
                         <nav className="flex flex-col gap-2">
-                            {["Home", "Menu", "About", "Gallery", "Contact", "Jobs"].map((item) => (
+                            <Link
+                                href={`/`}
+                                className="text-zinc-400 hover:text-white transition-colors"
+                            >
+                                Home
+                            </Link>
+                            {["Menu", "About", "Gallery", "Contact", "Jobs"].map((item) => (
                                 <Link
                                     key={item}
                                     href={`/${item.toLowerCase()}`}

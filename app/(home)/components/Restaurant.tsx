@@ -1,7 +1,6 @@
 'use client'
 
 import { Button } from "@/components/ui/button"
-import { Quote } from 'lucide-react'
 import { menuItems } from "@/data/menu-data"
 import MenuCard from "./MenuCard"
 import GallerySection from "./GallerySection"
@@ -59,19 +58,21 @@ export default function Restaurant() {
             {/* Testimonials Section */}
             <section className="bg-[#FBEEE4] px-4 py-16 md:py-24">
                 <div className="mx-auto max-w-6xl">
-                    <div className="mb-12 md:mb-16">
-                        <Quote className="h-16 w-full text-[#FFC1B4] md:h-24 md:w-24" />
-                        <h2 className="text-2xl font-bold text-gray-900 md:text-4xl">
-                            Real Stories from
-                            <br />
-                            Real Customers
-                        </h2>
-                        <p className="mt-2 text-gray-600">
-                            Get inspired by these stories.
-                        </p>
+                    <div className="flex items-center gap-5">
+                        <img src="/quama.png" alt="" />
+                        <div className="mb-5">
+                            <h2 className="text-2xl font-bold text-gray-900 md:text-4xl">
+                                Real Stories from
+                                <br />
+                                Real Customers
+                            </h2>
+                            <p className="mt-2 text-gray-600">
+                                Get inspired by these stories.
+                            </p>
+                        </div>
                     </div>
 
-                    <div className="grid gap-6 md:grid-cols-2">
+                    <div className="grid gap-2 md:grid-cols-2">
                         <div className="flex md:justify-end  justify-center">
                             <div className="bg-white p-6 rounded-lg shadow-sm w-[300px] ">
                                 <blockquote className="space-y-4">
