@@ -37,7 +37,13 @@ const Footer = () => {
                             >
                                 Home
                             </Link>
-                            {["Menu", "About", "Gallery", "Contact", "Jobs"].map((item) => (
+                            <Link
+                                href={`/about-us`}
+                                className="text-zinc-400 hover:text-white transition-colors"
+                            >
+                                About
+                            </Link>
+                            {["Menu", "Gallery", "Contact", "Jobs"].map((item) => (
                                 <Link
                                     key={item}
                                     href={`/${item.toLowerCase()}`}
