@@ -105,19 +105,19 @@ export const menu1 = [
         name: "Lemon Coriander Soup",
         description:
           "A refreshing and tangy soup made with fresh lemon, coriander, and a blend of aromatic spices, perfect for a light appetizer.",
-        price: 6.99,
+        price: "6.99$",
       },
       {
         name: "Hot & Sour (Veg./Non-Veg.)",
         description:
           "A spicy and tangy soup that combines vegetables (or meat) with a flavorful broth, offering a perfect balance of hot and sour taste.",
-        price: 6.99,
+        price: "6.99$",
       },
       {
         name: "Manchow (Veg./Non-Veg.)",
         description:
           "A flavorful and hearty soup, rich with mixed vegetables (or meat) and a crunchy texture, seasoned with spices to create a bold and savory taste.",
-        price: 6.99,
+        price: "6.99$",
       },
     ],
   },
@@ -128,55 +128,55 @@ export const menu1 = [
         name: "Spinach Corn Roll",
         description:
           "A crispy, golden-fried roll stuffed with a delicious blend of spinach, sweet corn, and creamy spices, served with a tangy dip.",
-        price: 15.99,
+        price: "15.99$",
       },
       {
         name: "Tandoori Stuffed Aloo",
         description:
           "Flavorful potatoes stuffed with a spiced mixture, marinated in tandoori spices, and grilled to perfection in a clay oven.",
-        price: 15.99,
+        price: "15.99$",
       },
       {
         name: "Paneer Belle",
         description:
           "Soft paneer cubes marinated in a rich and aromatic sauce, grilled for a smoky flavor and a deliciously tender bite.",
-        price: 17.99,
+        price: "17.99$",
       },
       {
         name: "Afghani Paneer Tikka",
         description:
           "Creamy and mildly spiced paneer tikka, infused with rich Afghani flavors, slow-cooked in a tandoor for a soft and juicy texture.",
-        price: 16.99,
+        price: "16.99$",
       },
       {
         name: "Mushroom Chilli",
         description:
           "A spicy and savory Indo-Chinese delight with crispy mushrooms tossed in a hot garlic sauce, chilies, and bell peppers.",
-        price: 15.99,
+        price: "15.99$",
       },
       {
         name: "Paneer Chilli",
         description:
           "Soft paneer cubes stir-fried with onions, bell peppers, and a tangy chili sauce for a bold and zesty flavor.",
-        price: 16.99,
+        price: "16.99$",
       },
       {
         name: "Double Decker Mushroom",
         description:
           "A unique layered mushroom dish, loaded with flavorful stuffing and grilled to perfection, offering a rich and smoky taste.",
-        price: 16.99,
+        price: "16.99$",
       },
       {
         name: "French Fries",
         description:
           "Crispy, golden fries served in your choice of classic salted, spicy masala, or rich parmesan cheese topping.",
-        price: 6.99,
+        price: "6.99$",
       },
       {
         name: "Veg Platter",
         description:
           "A grand assortment of the finest vegetarian starters, including tandoori delights, crispy rolls, and spicy bites, perfect for sharing.",
-        price: 23.99,
+        price: "23.99$",
       },
     ],
   },
