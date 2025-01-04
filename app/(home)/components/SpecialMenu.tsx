@@ -62,7 +62,7 @@ const SpecialMenu = () => {
 
 
     return (
-        <section className=" mx-auto  -mt-10 w-[800px]">
+        <section className=" mx-auto  -mt-10 md:w-[800px]">
             <div className="flex justify-around  items-center mb-8">
                 {menuCategories2.map((category: any, index: any) => (
                     <div key={index} className="text-center flex-col  flex">
