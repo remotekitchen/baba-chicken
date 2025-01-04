@@ -10,9 +10,7 @@ export default function Hero() {
 
     const router = useRouter()
     return (
-        <div className="min-h-screen flex flex-col">
-
-
+        <div className=" flex flex-col">
             <main className="flex-1">
                 <div className="relative h-[80vh] flex items-center justify-center">
                     {/* Background Image */}
