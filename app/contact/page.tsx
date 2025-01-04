@@ -1,12 +1,59 @@
-'use client'
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Card, CardContent } from "@/components/ui/card"
-import { Phone } from 'lucide-react'
+import { useForm, SubmitHandler } from "react-hook-form";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Card, CardContent } from "@/components/ui/card";
+import { Phone } from "lucide-react";
+import toast from "react-hot-toast";
+
+type FormData = {
+    name: string;
+    email: string;
+    phone: string;
+    message: string;
+};
 
 export default function ContactFormPage() {
+    const {
+        register,
+        handleSubmit,
+        formState: { errors, isSubmitting },
+        reset,
+    } = useForm<FormData>();
+
+    const onSubmit: SubmitHandler<FormData> = async (data) => {
+        try {
+            const response = await fetch("/api/send-email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    to: "support@example.com", // Replace with your email recipient
+                    subject: "New Contact Form Submission",
+                    text: `
+            Name: ${data.name}
+            Email: ${data.email}
+            Phone: ${data.phone}
+            Message: ${data.message}
+          `,
+                }),
+            });
+
+            if (response.ok) {
+                toast.success("Email sent successfully!");
+                reset();
+            } else {
+                toast.error("Failed to send email. Please try again.");
+            }
+        } catch (error: any) {
+            console.log("error", error)
+            toast.error("Something went wrong. Please try again.");
+        }
+    };
+
     return (
         <div className="container mx-auto p-4">
             <h1 className="text-2xl md:text-3xl font-bold text-red-600 mb-8 text-center md:text-center">
@@ -17,7 +64,7 @@ export default function ContactFormPage() {
                 {/* Form Section */}
                 <Card>
                     <CardContent className="p-6">
-                        <form className="space-y-6">
+                        <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
                             <div>
                                 <label htmlFor="name" className="block text-sm font-medium mb-2">
                                     Name
@@ -26,7 +73,11 @@ export default function ContactFormPage() {
                                     id="name"
                                     placeholder="First Name"
                                     className="w-full"
+                                    {...register("name", { required: "Name is required" })}
                                 />
+                                {errors.name && (
+                                    <p className="text-sm text-red-500 mt-1">{errors.name.message}</p>
+                                )}
                             </div>
 
                             <div>
@@ -38,7 +89,17 @@ export default function ContactFormPage() {
                                     type="email"
                                     placeholder="Enter your Email"
                                     className="w-full"
+                                    {...register("email", {
+                                        required: "Email is required",
+                                        pattern: {
+                                            value: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+                                            message: "Invalid email format",
+                                        },
+                                    })}
                                 />
+                                {errors.email && (
+                                    <p className="text-sm text-red-500 mt-1">{errors.email.message}</p>
+                                )}
                             </div>
 
                             <div>
@@ -50,7 +111,17 @@ export default function ContactFormPage() {
                                     type="tel"
                                     placeholder="Enter your number"
                                     className="w-full"
+                                    {...register("phone", {
+                                        required: "Phone number is required",
+                                        pattern: {
+                                            value: /^\d{10,15}$/,
+                                            message: "Invalid phone number",
+                                        },
+                                    })}
                                 />
+                                {errors.phone && (
+                                    <p className="text-sm text-red-500 mt-1">{errors.phone.message}</p>
+                                )}
                             </div>
 
                             <div>
@@ -61,14 +132,19 @@ export default function ContactFormPage() {
                                     id="message"
                                     placeholder="Write the message"
                                     className="w-full min-h-[100px]"
+                                    {...register("message", { required: "Message is required" })}
                                 />
+                                {errors.message && (
+                                    <p className="text-sm text-red-500 mt-1">{errors.message.message}</p>
+                                )}
                             </div>
 
                             <Button
                                 type="submit"
                                 className="w-full bg-red-600 hover:bg-red-700 text-white"
+                                disabled={isSubmitting}
                             >
-                                Submit
+                                {isSubmitting ? "Sending..." : "Submit"}
                             </Button>
                         </form>
                     </CardContent>
@@ -111,6 +187,5 @@ export default function ContactFormPage() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
-

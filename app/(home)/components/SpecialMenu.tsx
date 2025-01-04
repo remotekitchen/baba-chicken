@@ -11,23 +11,23 @@ import {
 const SpecialMenu = () => {
 
 
-    const menuCategories2 = [
-        {
-            name: "Starters",
-            icon: "/menu/s_menu1.png",
-            image: "/assets/icon1.png",
-        },
-        {
-            name: "Main Course",
-            icon: "/icons/main-course.svg",
-            image: "/assets/icon1.png",
-        },
-        {
-            name: "Dessert",
-            icon: "/icons/dessert.svg",
-            image: "/assets/icon1.png",
-        },
-    ];
+    // const menuCategories2 = [
+    //     {
+    //         name: "Starters",
+    //         icon: "/menu/s_menu1.png",
+    //         image: "/assets/icon1.png",
+    //     },
+    //     {
+    //         name: "Main Course",
+    //         icon: "/icons/main-course.svg",
+    //         image: "/assets/icon1.png",
+    //     },
+    //     {
+    //         name: "Dessert",
+    //         icon: "/icons/dessert.svg",
+    //         image: "/assets/icon1.png",
+    //     },
+    // ];
 
 
     const menuCategories = [
@@ -64,7 +64,7 @@ const SpecialMenu = () => {
     return (
         <section className=" mx-auto  md:w-[800px]">
             <div className="flex justify-around  items-center mb-8">
-                {menuCategories2.map((category: any, index: any) => (
+                {/* {menuCategories2.map((category: any, index: any) => (
                     <div key={index} className="text-center flex-col  flex">
                         <div className="p-4 flex items-center justify-center  inline-block">
                             <Image
@@ -80,7 +80,7 @@ const SpecialMenu = () => {
 
 
                     </div>
-                ))}
+                ))} */}
             </div>
             {/* <div className="transform translateY-[-20%]">
                 <img src="/assets/hero.png" alt="" className="h-[220px] w-full" />

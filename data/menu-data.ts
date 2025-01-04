@@ -122,6 +122,29 @@ export const menu1 = [
     ],
   },
   {
+    category: "Salads",
+    items: [
+      {
+        name: "Cream Salad",
+        description:
+          "Soft and fluffy naan stuffed with spiced paneer filling, served with a rich and flavorful gravy for the perfect accompaniment.",
+        price: "5.99$",
+      },
+      {
+        name: "Green Salad",
+        description:
+          "A delicious stuffed naan filled with juicy, seasoned chicken, paired with a savoury gravy to enhance the taste.",
+        price: "4.99$",
+      },
+      // {
+      //   name: "Peanut and Channa Masala",
+      //   description:
+      //     "A hearty naan stuffed with flavorful minced meat (keema), served with a delectable gravy for a satisfying meal.",
+      //   price: "7.99$",
+      // },
+    ],
+  },
+  {
     category: "Starters (Veg.)",
     items: [
       {
@@ -198,6 +221,76 @@ export const menu1 = [
     ],
   },
   {
+    category: "Fish",
+    items: [
+      {
+        name: "Fish Fry with Tartar Sauce",
+        description:
+          "Crispy, golden-fried fish fillets served with a tangy and creamy tartar sauce, making for a perfect appetizer.",
+        price: "17.99$",
+      },
+      {
+        name: "Afghani Fish Tikka",
+        description:
+          "Succulent fish marinated in a rich, creamy Afghani-style yogurt-based sauce, slow-cooked in a tandoor for a melt-in-the-mouth experience.",
+        price: "17.99$",
+      },
+      {
+        name: "Fish Belle",
+        description:
+          "Tender fish fillets grilled with a special blend of spices, offering a smoky and flavorful bite.",
+        price: "17.99$",
+      },
+      {
+        name: "Tandoori Fish",
+        description:
+          "Fresh fish marinated in yogurt and aromatic tandoori spices, char-grilled to perfection for a smoky and juicy flavor.",
+        price: "17.99$",
+      },
+      {
+        name: "Fish Kali Mirch",
+        description:
+          "A bold and aromatic dish featuring fish cooked in a peppery black pepper gravy, delivering a rich and slightly spicy taste.",
+        price: "17.99$",
+      },
+      {
+        name: "Chilli Fish",
+        description:
+          "A spicy Indo-Chinese delight with crispy fish tossed in a flavorful chili garlic sauce, bell peppers, and onions.",
+        price: "17.99$",
+      },
+      {
+        name: "Fish Pakora",
+        description:
+          "Crunchy and deep-fried fish fritters coated in a spiced chickpea batter, served with mint chutney.",
+        price: "14.99$",
+      },
+    ],
+  },
+  {
+    category: "Rolls",
+    items: [
+      {
+        name: "Chicken Kathi Roll",
+        description:
+          "Succulent, spiced chicken pieces wrapped in a soft, flaky paratha, layered with tangy sauces and fresh veggies for a delicious handheld meal.",
+        price: "13.99$",
+      },
+      {
+        name: "Paneer Tikka Roll",
+        description:
+          "Smoky and marinated paneer tikka, grilled to perfection and wrapped in a soft paratha with fresh veggies and a creamy dressing.",
+        price: "12.99$",
+      },
+      {
+        name: "Chilli Chicken Roll",
+        description:
+          "A fiery and flavorful roll featuring spicy chilli chicken stir-fried with onions and bell peppers, wrapped in a warm paratha.",
+        price: "13.99$",
+      },
+    ],
+  },
+  {
     category: "Main Course (Veg.)",
     items: [
       {
@@ -262,75 +355,7 @@ export const menu1 = [
       },
     ],
   },
-  {
-    category: "Rolls",
-    items: [
-      {
-        name: "Chicken Kathi Roll",
-        description:
-          "Succulent, spiced chicken pieces wrapped in a soft, flaky paratha, layered with tangy sauces and fresh veggies for a delicious handheld meal.",
-        price: "13.99$",
-      },
-      {
-        name: "Paneer Tikka Roll",
-        description:
-          "Smoky and marinated paneer tikka, grilled to perfection and wrapped in a soft paratha with fresh veggies and a creamy dressing.",
-        price: "12.99$",
-      },
-      {
-        name: "Chilli Chicken Roll",
-        description:
-          "A fiery and flavorful roll featuring spicy chilli chicken stir-fried with onions and bell peppers, wrapped in a warm paratha.",
-        price: "13.99$",
-      },
-    ],
-  },
-  {
-    category: "Stuffed Naan",
-    items: [
-      {
-        name: "Paneer Naan with Gravy",
-        description:
-          "Soft and fluffy naan stuffed with spiced paneer filling, served with a rich and flavorful gravy for the perfect accompaniment.",
-        price: "12.99$",
-      },
-      {
-        name: "Chicken Naan with Gravy",
-        description:
-          "A delicious stuffed naan filled with juicy, seasoned chicken, paired with a savoury gravy to enhance the taste.",
-        price: "13.99$",
-      },
-      {
-        name: "Keema Naan with Gravy",
-        description:
-          "A hearty naan stuffed with flavorful minced meat (keema), served with a delectable gravy for a satisfying meal.",
-        price: "14.99$",
-      },
-    ],
-  },
-  {
-    category: "Salads",
-    items: [
-      {
-        name: "Paneer Naan with Gravy",
-        description:
-          "Soft and fluffy naan stuffed with spiced paneer filling, served with a rich and flavorful gravy for the perfect accompaniment.",
-        price: "12.99$",
-      },
-      {
-        name: "Chicken Naan with Gravy",
-        description:
-          "A delicious stuffed naan filled with juicy, seasoned chicken, paired with a savoury gravy to enhance the taste.",
-        price: "13.99$",
-      },
-      {
-        name: "Keema Naan with Gravy",
-        description:
-          "A hearty naan stuffed with flavorful minced meat (keema), served with a delectable gravy for a satisfying meal.",
-        price: "14.99$",
-      },
-    ],
-  },
+
   {
     category: "Main Course (Non-Veg.)",
     items: [
@@ -396,53 +421,7 @@ export const menu1 = [
       },
     ],
   },
-  {
-    category: "Fish",
-    items: [
-      {
-        name: "Fish Fry with Tartar Sauce",
-        description:
-          "Crispy, golden-fried fish fillets served with a tangy and creamy tartar sauce, making for a perfect appetizer.",
-        price: "17.99$",
-      },
-      {
-        name: "Afghani Fish Tikka",
-        description:
-          "Succulent fish marinated in a rich, creamy Afghani-style yogurt-based sauce, slow-cooked in a tandoor for a melt-in-the-mouth experience.",
-        price: "17.99$",
-      },
-      {
-        name: "Fish Belle",
-        description:
-          "Tender fish fillets grilled with a special blend of spices, offering a smoky and flavorful bite.",
-        price: "17.99$",
-      },
-      {
-        name: "Tandoori Fish",
-        description:
-          "Fresh fish marinated in yogurt and aromatic tandoori spices, char-grilled to perfection for a smoky and juicy flavor.",
-        price: "17.99$",
-      },
-      {
-        name: "Fish Kali Mirch",
-        description:
-          "A bold and aromatic dish featuring fish cooked in a peppery black pepper gravy, delivering a rich and slightly spicy taste.",
-        price: "17.99$",
-      },
-      {
-        name: "Chilli Fish",
-        description:
-          "A spicy Indo-Chinese delight with crispy fish tossed in a flavorful chili garlic sauce, bell peppers, and onions.",
-        price: "17.99$",
-      },
-      {
-        name: "Fish Pakora",
-        description:
-          "Crunchy and deep-fried fish fritters coated in a spiced chickpea batter, served with mint chutney.",
-        price: "14.99$",
-      },
-    ],
-  },
+
   {
     category: "Mutton Specialities",
     items: [
@@ -472,6 +451,31 @@ export const menu1 = [
       },
     ],
   },
+
+  {
+    category: "Stuffed Naan",
+    items: [
+      {
+        name: "Paneer Naan with Gravy",
+        description:
+          "Soft and fluffy naan stuffed with spiced paneer filling, served with a rich and flavorful gravy for the perfect accompaniment.",
+        price: "12.99$",
+      },
+      {
+        name: "Chicken Naan with Gravy",
+        description:
+          "A delicious stuffed naan filled with juicy, seasoned chicken, paired with a savoury gravy to enhance the taste.",
+        price: "13.99$",
+      },
+      {
+        name: "Keema Naan with Gravy",
+        description:
+          "A hearty naan stuffed with flavorful minced meat (keema), served with a delectable gravy for a satisfying meal.",
+        price: "14.99$",
+      },
+    ],
+  },
+
   {
     category: "Fish Curries",
     items: [
@@ -572,14 +576,31 @@ export const menu1 = [
     ],
   },
   {
-    category: "Beverages",
+    category: "Accompaniments",
     items: [
       {
-        name: "Baba's Special Masala Coke",
+        name: "Raita",
         description:
-          "A refreshing twist on the classic Coke, infused with a blend of aromatic spices for a unique and flavorful beverage.",
-        price: "3.99$",
+          "A cool and creamy yogurt-based side dish, seasoned with spices and herbs, perfect for balancing the heat of your meal.",
+        price: "4.99$",
       },
+      // {
+      //   name: "Papad (2 Pcs)",
+      //   description:
+      //     "Crispy and thin Indian papads, lightly fried and served as a crunchy side or appetizer.",
+      //   price: "2.99$",
+      // },
+    ],
+  },
+  {
+    category: "Beverages",
+    items: [
+      // {
+      //   name: "Baba's Special Masala Coke",
+      //   description:
+      //     "A refreshing twist on the classic Coke, infused with a blend of aromatic spices for a unique and flavorful beverage.",
+      //   price: "3.99$",
+      // },
       {
         name: "Pop",
         description:
@@ -594,23 +615,7 @@ export const menu1 = [
       },
     ],
   },
-  {
-    category: "Accompaniments",
-    items: [
-      {
-        name: "Raita",
-        description:
-          "A cool and creamy yogurt-based side dish, seasoned with spices and herbs, perfect for balancing the heat of your meal.",
-        price: "4.99$",
-      },
-      {
-        name: "Papad (2 Pcs)",
-        description:
-          "Crispy and thin Indian papads, lightly fried and served as a crunchy side or appetizer.",
-        price: "2.99$",
-      },
-    ],
-  },
+
   {
     category: "Desserts",
     items: [

@@ -37,7 +37,7 @@ const MenuPage = () => {
                         <div className="items-center justify-center w-full text-center mt-14 mb-8">
                             <Button
                                 onClick={() => router.push("https://order.chatchefs.com/baba-chicken-a9126f07/baba-chicken-8a71dfba/menu")}
-                                className="bg-[#B72A23] px-8 py-5 mb-4">order now</Button>
+                                className="bg-[#B72A23] px-8 py-5 mb-4">View the full menu</Button>
                             <p>* Offers available for pickup and delivery orders only.</p>
                         </div>
                     </div>
