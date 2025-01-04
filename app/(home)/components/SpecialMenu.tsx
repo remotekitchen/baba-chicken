@@ -59,7 +59,7 @@ const SpecialMenu = () => {
     ];
 
 
-
+    console.log("first")
 
     return (
         <section className=" mx-auto  md:w-[800px]">
