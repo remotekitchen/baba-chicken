@@ -16,12 +16,12 @@ export default function Hero() {
                     {/* Background Image */}
                     <div className="absolute inset-0 z-0">
                         <div
-                            className="w-full h-full bg-cover bg-center"
+                            className="w-full h-full bg-cover bg-center "
                             style={{
-                                backgroundImage: "url('/assets/hero.png')",
+                                backgroundImage: "url('/hero2.jpeg')",
                             }}
                         />
-                        <div className="absolute inset-0 bg-black/70" />
+                        <div className="absolute inset-0 bg-black/80" />
                     </div>
 
                     {/* Content */}
@@ -64,7 +64,7 @@ export default function Hero() {
                         </motion.div>
                     </div>
                 </div>
-                <ChatButton />
+                {/* <ChatButton /> */}
             </main>
         </div>
     )

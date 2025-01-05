@@ -5,12 +5,12 @@ import React from 'react'
 const AboutRestaurant = () => {
     const router = useRouter()
     return (
-        <div>
-            <div className=" p-6">
+        <div className='mt-20'>
+            <div className="">
                 {/* About Section */}
-                <section className="flex flex-col md:flex-row items-center md:items-center   rounded-lg p-6 mb-6">
+                <section className="flex flex-col md:flex-row items-center md:items-center   rounded-lg ">
                     {/* Text Content */}
-                    <div className="md:w-1/2 p-4">
+                    <div className="md:w-1/2 p-10">
                         <h2 className="text-3xl font-bold text-[#B72A23] mb-4">About
                             <br /> Baba-Chicken</h2>
                         <p className="text-gray-700 text-lg mb-4">
@@ -26,9 +26,9 @@ const AboutRestaurant = () => {
                         </div>
                     </div>
                     {/* Image */}
-                    <div className="md:w-1/2 p-4">
+                    <div className="md:w-1/2 ">
                         <img
-                            src="/assets/about1.png"
+                            src="/about_us.JPG"
                             alt="Baba Chicken Dish"
                             className="rounded-lg"
                         />
@@ -36,17 +36,17 @@ const AboutRestaurant = () => {
                 </section>
 
                 {/* Why Us Section */}
-                <section className="flex flex-col md:flex-row items-center md:items-center    p-6 text-right justify-center">
+                <section className="flex md:mt-0 mt-10 flex-col md:flex-row items-center md:items-center  text-right justify-center">
                     {/* Image */}
-                    <div className="md:w-1/2 p-4">
+                    <div className="md:w-1/2 ">
                         <img
-                            src="/assets/about2.png"
+                            src="/why_us.jpeg"
                             alt="Delicious Indian Cuisine"
                             className="rounded-lg shadow-lg"
                         />
                     </div>
                     {/* Text Content */}
-                    <div className="md:w-1/2 p-4">
+                    <div className="md:w-1/2 p-10">
                         <h2 className="text-3xl font-bold text-[#B72A23] mb-4">Why Us</h2>
                         <p className="text-gray-700 text-lg mb-4">
                             Our menu is a testament to authentic Indian cuisine, featuring iconic dishes like Babas butter chicken, renowned for its secret homemade masalas, alongside modern favourites such as fish fry and spinach corn roll. At Babas, each dish tells a story of tradition and taste, making us a standout Indian restaurant in White Rock. Whether youre planning a cosy family dinner, a vibrant evening out, or a takeaway, Babas provides a range of dining options tailored to your preferences. We are your go-to destination for Indian cuisine in White Rock.

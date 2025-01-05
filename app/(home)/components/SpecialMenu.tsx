@@ -31,60 +31,21 @@ const SpecialMenu = () => {
 
 
     const menuCategories = [
-        {
-            name: "Starters",
-            icon: "/menu/s_menu1.png",
-            image: "/menu/s_menu1.png",
-        },
-        {
-            name: "Main Course",
-            icon: "/icons/main-course.svg",
-            image: "/menu/s_menu2.png",
-        },
-        {
-            name: "Dessert",
-            icon: "/icons/dessert.svg",
-            image: "/menu/s_menu3.png",
-        },
-        {
-            name: "Dessert",
-            icon: "/icons/dessert.svg",
-            image: "/menu/s_menu4.png",
-        },
-        {
-            name: "Dessert",
-            icon: "/icons/dessert.svg",
-            image: "/menu/s_menu4.png",
-        },
+        "/assets/slider/top_slider1.png",
+        "/assets/slider/top_slider2.png",
+        "/assets/slider/top_slider3.png",
+        "/assets/slider/top_slider4.png",
+        "/assets/slider/top_slider5.png",
     ];
 
 
     console.log("first")
 
     return (
-        <section className=" mx-auto  md:w-[800px]">
-            <div className="flex justify-around  items-center mb-8">
-                {/* {menuCategories2.map((category: any, index: any) => (
-                    <div key={index} className="text-center flex-col  flex">
-                        <div className="p-4 flex items-center justify-center  inline-block">
-                            <Image
-                                src={category.image}
-                                alt={category.name}
-                                width={70}
-                                height={70}
-                            />
-                        </div>
-                        <button className="bg-white mt-2 text-red-500 px-4 py-2 rounded-md shadow-[0_0_15px_5px] shadow-red-500 transition">
-                            {category.name}
-                        </button>
+        <section className=" mx-auto  ">
+            <div className="flex justify-around  items-center mb-8 mt-10">
 
-
-                    </div>
-                ))} */}
             </div>
-            {/* <div className="transform translateY-[-20%]">
-                <img src="/assets/hero.png" alt="" className="h-[220px] w-full" />
-            </div> */}
 
             <div
                 style={{
@@ -99,18 +60,18 @@ const SpecialMenu = () => {
                 <Carousel
 
 
-                    className="w-full max-w-5xl mx-auto relative"
+                    className="w-full container mx-auto relative translate-y-[-100px]"
                 >
 
-                    <CarouselContent className="relative h-[300px] flex items-center">
-                        {menuCategories.map((category: any, index: any) => (
-                            <CarouselItem key={index} className="md:basis-1/2 basis-1/1 lg:basis-1/3">
+                    <CarouselContent className="relative h-[260px] flex items-center">
+                        {menuCategories.map((src: any, index: any) => (
+                            <CarouselItem key={index} className="md:basis-1/2 basis-1/1 lg:basis-1/4">
                                 <div className="p-4">
                                     <div className="p-1">
                                         <div className="relative group">
                                             <Image
-                                                src={category.image || "/placeholder.svg"}
-                                                alt={category.name}
+                                                src={src}
+                                                alt={"src"}
                                                 width={200}
                                                 height={200}
                                                 className="rounded-lg transition-transform duration-300 group-hover:scale-105"

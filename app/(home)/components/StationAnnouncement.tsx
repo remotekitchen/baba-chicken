@@ -1,6 +1,6 @@
 export default function StationAnnouncement() {
     return (
-        <div className="min-h-screen  p-4 md:p-8 mt-10">
+        <div className="  p-4 md:p-8 mt-10">
             <div className="mx-auto max-w-6xl">
                 <div className="grid grid-cols-1 md:grid-cols-[1fr,2fr,1fr] gap-8 items-center">
                     {/* Clock Tower */}

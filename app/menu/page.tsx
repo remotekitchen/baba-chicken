@@ -4,6 +4,8 @@ import MenuCard from '../(home)/components/MenuCard'
 import { Button } from '@/components/ui/button'
 import { menu1 } from '@/data/menu-data'
 import { useRouter } from 'next/navigation'
+import HistorySection from '../(home)/components/HistorySection'
+import StationAnnouncement from '../(home)/components/StationAnnouncement'
 
 const MenuPage = () => {
     const router = useRouter()
@@ -41,6 +43,9 @@ const MenuPage = () => {
                             <p>* Offers available for pickup and delivery orders only.</p>
                         </div>
                     </div>
+
+                    <StationAnnouncement />
+                    <HistorySection />
 
                 </div>
             </div>
