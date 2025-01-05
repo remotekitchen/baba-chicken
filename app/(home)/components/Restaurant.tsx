@@ -49,9 +49,6 @@ export default function Restaurant() {
 
             </section>
 
-
-
-
             {/* Gallery Section */}
             <GallerySection />
 
