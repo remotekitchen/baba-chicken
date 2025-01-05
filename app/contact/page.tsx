@@ -57,7 +57,7 @@ export default function ContactFormPage() {
 
     return (
         <div className="container mx-auto p-4">
-            <h1 className="text-2xl md:text-3xl font-bold text-red-600 mb-8 text-center md:text-center">
+            <h1 className="text-2xl md:text-3xl font-bold text-[#B72A23] mb-8 text-center md:text-center">
                 CONTACT US
             </h1>
 
@@ -170,7 +170,7 @@ export default function ContactFormPage() {
 
                     <div className="space-y-4">
                         <div>
-                            <h3 className="font-medium text-red-600 mb-2">Call Us</h3>
+                            <h3 className="font-medium text-[#B72A23] mb-2">Call Us</h3>
                             <p className="flex items-center gap-2">
                                 <Phone className="h-4 w-4" />
                                 604-756-2222
@@ -180,7 +180,7 @@ export default function ContactFormPage() {
                         <hr className="border-[#B72A23]" />
 
                         <div>
-                            <h3 className="font-medium text-red-600 mb-2">Operating Hours</h3>
+                            <h3 className="font-medium text-[#B72A23] mb-2">Operating Hours</h3>
                             <p>Monday - Friday</p>
                             <p>11 am-11 pm</p>
                         </div>

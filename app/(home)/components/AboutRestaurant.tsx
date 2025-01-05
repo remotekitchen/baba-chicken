@@ -47,7 +47,7 @@ const AboutRestaurant = () => {
                     </div>
                     {/* Text Content */}
                     <div className="md:w-1/2 p-4">
-                        <h2 className="text-3xl font-bold text-red-600 mb-4">Why Us</h2>
+                        <h2 className="text-3xl font-bold text-[#B72A23] mb-4">Why Us</h2>
                         <p className="text-gray-700 text-lg mb-4">
                             Our menu is a testament to authentic Indian cuisine, featuring iconic dishes like Babas butter chicken, renowned for its secret homemade masalas, alongside modern favourites such as fish fry and spinach corn roll. At Babas, each dish tells a story of tradition and taste, making us a standout Indian restaurant in White Rock. Whether youre planning a cosy family dinner, a vibrant evening out, or a takeaway, Babas provides a range of dining options tailored to your preferences. We are your go-to destination for Indian cuisine in White Rock.
                         </p>

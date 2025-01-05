@@ -26,7 +26,7 @@ export function NavMenu() {
           <Link
             key={item.href}
             href={item.href}
-            className={`text-gray-700 hover:text-red-600 transition-colors ${pathname === item.href ? "text-red-600 font-bold" : ""
+            className={`text-gray-700 hover:text-[#B72A23] transition-colors ${pathname === item.href ? "text-[#B72A23] font-bold" : ""
               }`}
           >
             {item.label}
@@ -67,7 +67,7 @@ export function NavMenu() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className={`text-xl text-gray-700 hover:text-red-600 transition-colors ${pathname === item.href ? "text-red-600 font-bold" : ""
+                    className={`text-xl text-gray-700 hover:text-[#B72A23] transition-colors ${pathname === item.href ? "text-[#B72A23] font-bold" : ""
                       }`}
                   >
                     {item.label}

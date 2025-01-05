@@ -91,3 +91,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* gallery_1 */
+
+/* .gallery_1 {
+  position: relative;
+}
+
+.gallery_1 {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #b72a23;
+  width: 2px;
+} */

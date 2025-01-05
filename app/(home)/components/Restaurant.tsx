@@ -14,16 +14,16 @@ export default function Restaurant() {
 
     const testimonials: any = [
         {
-            author: "Monster Alive",
-            content: "I recently ordered takeout from Baba Chicken and was thoroughly impressed. I got the desi style chicken curry, and it was mouthwatering and absolutely delicious. I've never had such an authentic taste in Canada before—it truly reminded me of home in India and was worth every penny."
+            author: "Zoheret Singh Narang",
+            content: "We ordered Babas Chicken at the office today. We ordered the Chilli Chicken, Tandoori Fish along with Butter chicken and Kaali dal and i can confirm, this took me back to India!! The food was Amazing!! The quantity along with the price were both up to par. The Fish melted in my mouth while the Butter Chicken was a whole other experience!! This is my new GO TO indian place! Highly recommend"
         },
         {
-            author: "Daksh Jain",
-            content: "Best food in Surry. We tried kaali mirchi panner and it was one the best. I am from Ludhiana and lives in Calgary and I can visit Surry just to have food here."
+            author: "Karan Pratap Singh",
+            content: "I was blown away by the food! It took me right back to Ludhiana. The taste was authentic, the price point perfect and the service was with a smile. Besides their signature Baba Butter chicken (you've never had butter chicken like this), we tried the Spinach Corn Roll and the Seekh Kebab and they were amazing! You gotta try it now."
         },
         {
-            author: "Rajeev Syal",
-            content: "Finally no more sweet butter chicken in town. I just loved the vibe, they are serving greenchutney and onions with food. All steel utensils are used here and it makes them unique."
+            author: "Chiranjiv Takkar",
+            content: "Tried the new Baba Chicken Abbotsford, they nailed it with the same taste of Ludhiana OG Baba Chicken. Loved everything we ordered - Butter Chicken, Kaali Mirch Chicken, Fried Fish and Spring Rolls, everything Iconic. Must try!"
         }
     ]
 
@@ -31,7 +31,7 @@ export default function Restaurant() {
         <div className="min-h-screen bg-white">
             <section className="bg-white py-16">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-center text-red-600 mb-12">Signature dish</h2>
+                    <h2 className="text-4xl font-bold text-center text-[#B72A23] mb-12">Signature dish</h2>
                     <div className="grid  grid-cols-1 md:grid-cols-2 gap-8  mx-auto">
                         {menuItems.map((item: any, index: any) => (
                             <MenuCard key={index} item={item} />
@@ -54,26 +54,29 @@ export default function Restaurant() {
 
             {/* Testimonials Section */}
             <section className="bg-[#FBEEE4] px-4 py-16 md:py-24">
-                <div className="mx-auto max-w-6xl">
-                    <div className="flex items-center gap-5">
+                <div className="mx-auto max-w-6xl grid grid-cols-12 gap-10">
+                    <div className=" md:block hidden col-span-2">
                         <img src="/quama.png" alt="" />
-                        <div className="mb-5">
-                            <h2 className="text-2xl font-bold text-gray-900 md:text-4xl">
-                                Real Stories from
-                                <br />
-                                Real Customers
-                            </h2>
-                            <p className="mt-2 text-gray-600">
-                                Get inspired by these stories.
-                            </p>
-                        </div>
                     </div>
+                    <div className="flex flex-col justify-between col-span-12 md:col-span-5">
+                        <div className="flex items-center gap-5 md:mb-0 mb-6">
+                            <img src="/quama.png" alt="" className="md:hidden block" />
 
-                    <div className="grid gap-2 md:grid-cols-2">
-                        <div className="flex md:justify-end  justify-center">
-                            <div className="bg-white p-6 rounded-lg shadow-sm w-[300px] ">
+                            <div className="mb-5">
+                                <h2 className="text-2xl font-bold text-gray-900 md:text-4xl">
+                                    Real Stories from
+                                    <br />
+                                    Real Customers
+                                </h2>
+                                <p className="mt-2 text-gray-600">
+                                    Get inspired by these stories.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="flex h-full">
+                            <div className="bg-white p-6 rounded-lg shadow-sm w-full ">
                                 <blockquote className="space-y-4">
-                                    <p className="text-gray-600 leading-relaxed">
+                                    <p className="text-gray-600 leading-[33px] tracking-[1px]	">
                                         {testimonials[0].content}
                                     </p>
                                     <footer className="font-medium text-gray-900">
@@ -82,8 +85,9 @@ export default function Restaurant() {
                                 </blockquote>
                             </div>
                         </div>
+                    </div>
 
-                        {/* Right column - stacked testimonials */}
+                    <div className=" col-span-12 md:col-span-5">
                         <div className="space-y-6">
                             {testimonials.slice(1).map((testimonial: any, index: any) => (
                                 <div
