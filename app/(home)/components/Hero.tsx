@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { ChatButton } from "./ChatButton"
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation"
 
