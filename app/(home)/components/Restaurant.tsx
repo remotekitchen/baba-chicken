@@ -54,7 +54,7 @@ export default function Restaurant() {
 
             {/* Testimonials Section */}
             <section className="bg-[#FBEEE4] px-4 py-16 md:py-24">
-                <div className="mx-auto max-w-6xl grid grid-cols-12 gap-10">
+                <div className="mx-auto md:max-w-6xl grid grid-cols-12 gap-10">
                     <div className=" md:block hidden col-span-2">
                         <img src="/quama.png" alt="" />
                     </div>
@@ -74,7 +74,7 @@ export default function Restaurant() {
                             </div>
                         </div>
                         <div className="flex h-full">
-                            <div className="bg-white p-6 rounded-lg shadow-sm w-full ">
+                            <div className="bg-white p-6 rounded-lg shadow-sm w-[320px]   md:w-full">
                                 <blockquote className="space-y-4">
                                     <p className="text-gray-600 leading-[33px] tracking-[1px]	">
                                         {testimonials[0].content}
@@ -92,7 +92,7 @@ export default function Restaurant() {
                             {testimonials.slice(1).map((testimonial: any, index: any) => (
                                 <div
                                     key={index}
-                                    className="bg-white p-6 rounded-lg shadow-sm"
+                                    className="bg-white p-6 rounded-lg shadow-sm  w-[320px] md:w-full"
                                 >
                                     <blockquote className="space-y-4">
                                         <p className="text-gray-600 leading-relaxed">

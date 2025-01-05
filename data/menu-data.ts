@@ -208,7 +208,7 @@ export const menu1 = [
     items: [
       {
         name: "Tandoori Chicken",
-        price: "Half/Full $15.99/$22.99",
+        price: "Half/Full 15.99$/22.99$",
       },
       {
         name: "Reshmi Chicken",
@@ -456,7 +456,7 @@ export const menu1 = [
         name: "Kadhai Chicken",
         description:
           "A spicy and aromatic chicken dish stir-fried with bell peppers, onions, and tomatoes in a traditional kadai-style masala.",
-        price: "18.50$",
+        price: "18.99$",
       },
       {
         name: "Chilli Chicken",
@@ -621,6 +621,29 @@ export const menu1 = [
     ],
   },
   {
+    category: "Beverages",
+    items: [
+      // {
+      //   name: "Baba's Special Masala Coke",
+      //   description:
+      //     "A refreshing twist on the classic Coke, infused with a blend of aromatic spices for a unique and flavorful beverage.",
+      //   price: "3.99$",
+      // },
+      {
+        name: "Pop",
+        description:
+          "A selection of fizzy soft drinks, offering a refreshing and bubbly drink to complement your meal.",
+        price: "1.99$",
+      },
+      {
+        name: "Water",
+        description:
+          "Crisp and pure spring water, perfect for refreshing and hydrating with every meal.",
+        price: "2.49$",
+      },
+    ],
+  },
+  {
     category: "Accompaniments",
     items: [
       {
@@ -637,29 +660,6 @@ export const menu1 = [
       // },
     ],
   },
-  {
-    category: "Beverages",
-    items: [
-      // {
-      //   name: "Baba's Special Masala Coke",
-      //   description:
-      //     "A refreshing twist on the classic Coke, infused with a blend of aromatic spices for a unique and flavorful beverage.",
-      //   price: "3.99$",
-      // },
-      {
-        name: "Pop",
-        description:
-          "A selection of fizzy soft drinks, offering a refreshing and bubbly drink to complement your meal.",
-        price: "1.99$",
-      },
-      {
-        name: "Spring Water",
-        description:
-          "Crisp and pure spring water, perfect for refreshing and hydrating with every meal.",
-        price: "2.49$",
-      },
-    ],
-  },
 
   {
     category: "Desserts",
@@ -671,7 +671,7 @@ export const menu1 = [
         price: "3.99$",
       },
       {
-        name: "Kheer",
+        name: "Rasmalai (2 pcs)",
         description:
           "A creamy and aromatic Indian rice pudding made with milk, sugar, and cardamom, garnished with nuts for a sweet and indulgent finish.",
         price: "4.99$",
