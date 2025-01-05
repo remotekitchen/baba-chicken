@@ -31,28 +31,29 @@ export default function ContactFormPage() {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    to: "support@example.com", // Replace with your email recipient
-                    subject: "New Contact Form Submission",
-                    text: `
-            Name: ${data.name}
-            Email: ${data.email}
-            Phone: ${data.phone}
-            Message: ${data.message}
-          `,
+                    to: ["sales@chatchefs.com", data?.email],
+                    subject:
+                        "Congratulations! Your Free Demo is Booked – We're Excited to Help!",
+                    phone: data.phone,
+                    email: data.email,
+                    message: data.message,
+                    name: data.name
                 }),
             });
 
             if (response.ok) {
                 toast.success("Email sent successfully!");
-                reset();
+                reset(); // Reset the form
             } else {
                 toast.error("Failed to send email. Please try again.");
             }
         } catch (error: any) {
-            console.log("error", error)
+            console.error("Error:", error);
             toast.error("Something went wrong. Please try again.");
         }
     };
+
+
 
     return (
         <div className="container mx-auto p-4">

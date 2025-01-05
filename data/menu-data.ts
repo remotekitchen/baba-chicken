@@ -2,64 +2,64 @@ import { Testimonial, GalleryItem } from "@/types/menu";
 
 export const menuItems: any = [
   {
-    name: "Tandoori Chicken",
+    name: "Spinach Corn Roll",
     description:
       "Chicken marinated in a blend of yogurt, spices, and lemon juice, cooked to perfection in a traditional clay oven for a flavorful experience.",
     price: "15.99$",
   },
   {
-    name: "Chicken Tikka",
+    name: "Paneer Belle",
     description:
       "Tender chunks of chicken marinated in a mix of aromatic spices and yogurt, skewered and grilled until juicy and slightly charred.",
     price: "17.99$",
   },
   {
-    name: "Lemon Chicken",
+    name: "Tandoori Chicken",
     description:
       "Features chicken infused with fresh lemon juice, garlic, and herbs, cooked to golden perfection and bursting with refreshing flavors.",
+    price: "15.99$",
+  },
+  {
+    name: "Afghani Chicken",
+    description:
+      "Features chicken cooked in a tomato-based gravy with butter, cream, and a touch of spices for a melt-in-your-mouth experience.",
     price: "17.99$",
   },
   {
-    name: "Butter Chicken",
+    name: "Fish Fry with Tarter Sauce",
     description:
-      "Features chicken cooked in a tomato-based gravy with butter, cream, and a touch of spices for a melt-in-your-mouth experience.",
+      "Basmati rice layered with tender chicken, fragrant spices, and caramelized onions, slow-cooked to create a flavorful one-pot dish.",
+    price: "17.99$",
+  },
+  {
+    name: "Mutton Seekh Kebab",
+    description:
+      "North Indian lentil dish made with black lentils and kidney beans, in a rich, buttery tomato-based gravy.",
+    price: "17.99$",
+  },
+  {
+    name: "Keema Naan with Gravy",
+    description:
+      "Soft and fluffy Indian flatbread infused with freshly minced garlic and butter.",
+    price: "14.99$",
+  },
+  {
+    name: "Baba’ Butter Chicken",
+    description:
+      "A flaky, layered Indian flatbread made from whole wheat flour, rolled and cooked with ghee or butter.",
     price: "19.99$",
   },
   {
-    name: "Chicken Biryani",
-    description:
-      "Basmati rice layered with tender chicken, fragrant spices, and caramelized onions, slow-cooked to create a flavorful one-pot dish.",
-    price: "16.99$",
-  },
-  {
-    name: "Dal Makhni",
-    description:
-      "North Indian lentil dish made with black lentils and kidney beans, in a rich, buttery tomato-based gravy.",
-    price: "16.99$",
-  },
-  {
-    name: "Garlic Naan",
-    description:
-      "Soft and fluffy Indian flatbread infused with freshly minced garlic and butter.",
-    price: "4.5$",
-  },
-  {
-    name: "Laccha Parata",
-    description:
-      "A flaky, layered Indian flatbread made from whole wheat flour, rolled and cooked with ghee or butter.",
-    price: "4.5$",
-  },
-  {
-    name: "Paneer Tikka Roll",
+    name: "Kali Mirch Chicken",
     description:
       "Wrap filled with juicy chunks of marinated paneer grilled to perfection, with crisp vegetables, tangy chutneys and a dash of aromatic spices.",
-    price: "12.99$",
+    price: "19.99$",
   },
   {
-    name: "Fish Pakora",
+    name: "Baba’s Butter Paneer",
     description:
       "Crispy bite-sized pieces of fish are marinated in aromatic spices, dipped in a gram flour batter, and deep-fried to golden perfection.",
-    price: "14.99$",
+    price: "18.99$",
   },
 ];
 
@@ -200,6 +200,51 @@ export const menu1 = [
         description:
           "A grand assortment of the finest vegetarian starters, including tandoori delights, crispy rolls, and spicy bites, perfect for sharing.",
         price: "23.99$",
+      },
+    ],
+  },
+  {
+    category: "Starters (Non-Veg.)",
+    items: [
+      {
+        name: "Tandoori Chicken",
+        price: "Half/Full $15.99/$22.99",
+      },
+      {
+        name: "Reshmi Chicken",
+        price: "17.99$",
+      },
+      {
+        name: "Afghani Chicken",
+        price: "17.99$",
+      },
+      {
+        name: "Chicken Belle",
+        price: "17.99$",
+      },
+      {
+        name: "Chicken Lasuni Tikka",
+        price: "17.99$",
+      },
+      {
+        name: "Chicken Malai Tikka",
+        price: "17.99$",
+      },
+      {
+        name: "Chicken Kali Mirch Tikka",
+        price: "17.99$",
+      },
+      {
+        name: "Tangri Chicken",
+        price: "17.99$",
+      },
+      {
+        name: "Lemon Chicken Dry",
+        price: "17.99$",
+      },
+      {
+        name: "Non Veg Platter",
+        price: "26.99$",
       },
     ],
   },
