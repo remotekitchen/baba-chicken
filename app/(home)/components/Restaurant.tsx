@@ -30,7 +30,7 @@ export default function Restaurant() {
     return (
         <div className="min-h-screen bg-white">
             <section className="bg-white py-16">
-                <div className="container mx-auto px-4">
+                <div className="container mx-auto md:px-4 px-10">
                     <h2 className="text-4xl font-bold text-center text-[#B72A23] mb-12">Signature dish</h2>
                     <div className="grid  grid-cols-1 md:grid-cols-2 gap-8  mx-auto">
                         {menuItems.map((item: any, index: any) => (
@@ -40,7 +40,7 @@ export default function Restaurant() {
                     <div>
                         <div className="items-center justify-center w-full text-center mt-14">
                             <Button
-                                onClick={() => router.push("https://order.chatchefs.com/baba-chicken-a9126f07/baba-chicken-8a71dfba/menu")}
+                                onClick={() => router.push("/menu")}
                                 className="bg-[#B72A23] px-8 py-5 mb-4">View Menu</Button>
                             {/* <p>* Offers available for pickup and delivery orders only.</p> */}
                         </div>

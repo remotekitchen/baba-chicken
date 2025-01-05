@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const FoodGrid = () => {
     const foodItems = [
-        { src: "/assets/update/gallery1.JPG", alt: "Tandoori chicken with lemon" },
+        { src: "/assets/update/gallery10.jpeg", alt: "Tandoori chicken with lemon" },
         { src: "/assets/update/gallery2.JPG", alt: "Biryani rice dish" },
         { src: "/assets/update/gallery3.JPG", alt: "Grilled meat" },
         { src: "/assets/update/gallery4.JPG", alt: "Wrapped sandwich with fries" },
