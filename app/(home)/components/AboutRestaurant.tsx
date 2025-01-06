@@ -14,14 +14,10 @@ const AboutRestaurant = () => {
                         <h2 className="text-3xl font-bold text-[#B72A23] mb-4">About
                             <br /> Baba-Chicken</h2>
                         <p className="text-gray-700 text-lg mb-4">
-                            S. HIMMAT SINGH W/O WAS LOVINGLY CALLED BABA JI, STARTED A SMALL EATERY (DHABA) IN 1962.
-                            HIS RECIPES HAD THE REAL TASTE OF PUNJAB IN THEM. LATER IT WAS INHERITED BY MR. KANWALJIT SINGH WHO ALONG WITH HIS WIFE INTRODUCED SOME UNIQUE RECIPES LIKE FISH FRY AND SPINACH CORN ROLL WHICH STARTED SELLING LIKE HOT CAKES. HUGE DEMANDS AND LOVE FROM THE CUSTOMERS LED TO THE FIRST BABA&apos;S RESTAURANT IN MODEL TOWN IN 1991.
-
-                            THE SECRET HOMEMADE MAGIC MASALAS MADE BABA&apos;S BUTTER CHICKEN WORLD FAMOUS. NOW THE LEGACY IS CONTINUED BY MR. AVNEET SINGH.
+                            Himmat Singh, fondly known as Baba Ji, started a small eatery (dhaba) in 1962. His recipes carried the authentic taste of Punjab. Later, the eatery was inherited by Mr. Kanwaljit Singh, who, along with his wife, introduced unique dishes like fish fry and spinach corn roll, which quickly became customer favorites.
+                            The overwhelming demand and love from customers led to the opening of the first BABA&apos;S Restaurant in Model Town in 1991. The secret homemade magic masalas made BABA&apos;S butter chicken world-famous. Today, the legacy is carried forward by Mr. Avneet Singh.
                         </p>
-                        <p className="text-gray-700 text-lg mb-4">
-                            THE SECRET HOMEMADE MAGIC MASALAS MADE BABA&apos;S BUTTER CHICKEN WORLD FAMOUS. NOW THE LEGACY IS CONTINUED BY MR. AVNEET SINGH.
-                        </p>
+                        {/* BABA&apos;S  */}
                         <div className='flex items-start  '>
                             <button
                                 onClick={() => router.push("https://order.chatchefs.com/baba-chicken-a9126f07/baba-chicken-8a71dfba/menu")}
