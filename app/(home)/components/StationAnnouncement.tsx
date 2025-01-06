@@ -4,7 +4,7 @@ export default function StationAnnouncement() {
             <div className="mx-auto max-w-6xl">
                 <div className="grid grid-cols-1 md:grid-cols-[1fr,2fr,1fr] gap-8 items-center">
                     {/* Clock Tower */}
-                    <div className=" md:block">
+                    <div className="hidden md:block">
                         <img
                             src="/assets/new-section/minner.png"
                             alt="Clock Tower"
@@ -42,7 +42,7 @@ export default function StationAnnouncement() {
                     </div>
 
                     {/* Station Sign */}
-                    <div className=" md:block">
+                    <div className="hidden md:block">
                         <img
                             src="/assets/new-section/sine-board.png"
                             alt="Clock Tower"

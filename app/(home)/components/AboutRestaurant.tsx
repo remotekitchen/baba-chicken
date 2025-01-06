@@ -14,7 +14,10 @@ const AboutRestaurant = () => {
                         <h2 className="text-3xl font-bold text-[#B72A23] mb-4">About
                             <br /> Baba-Chicken</h2>
                         <p className="text-gray-700 text-lg mb-4">
-                            Baba Chicken started in 1962 when S. Himmat Singh, lovingly called Baba Ji, opened a small dhaba serving authentic Punjabi food. His son, Mr. Kanwaljit Singh, introduced popular dishes like Fish Fry and Spinach Corn Roll, leading to the first Baba Restaurant in 1991. Known for its signature Baba Butter Chicken and secret masala recipes, Baba Chicken has now expanded to Chandigarh, bringing its rich legacy and flavours to more food lovers. Today, Mr. Avneet Singh carries forward the family tradition, ensuring Baba remains a beloved name in Punjabi cuisine.
+                            S. HIMMAT SINGH W/O WAS LOVINGLY CALLED BABA JI, STARTED A SMALL EATERY (DHABA) IN 1962.
+                            HIS RECIPES HAD THE REAL TASTE OF PUNJAB IN THEM. LATER IT WAS INHERITED BY MR. KANWALJIT SINGH WHO ALONG WITH HIS WIFE INTRODUCED SOME UNIQUE RECIPES LIKE FISH FRY AND SPINACH CORN ROLL WHICH STARTED SELLING LIKE HOT CAKES. HUGE DEMANDS AND LOVE FROM THE CUSTOMERS LED TO THE FIRST BABA'S RESTAURANT IN MODEL TOWN IN 1991.
+
+                            THE SECRET HOMEMADE MAGIC MASALAS MADE BABA'S BUTTER CHICKEN WORLD FAMOUS. NOW THE LEGACY IS CONTINUED BY MR. AVNEET SINGH.
                         </p>
                         <div className='flex items-start  '>
                             <button
@@ -36,7 +39,7 @@ const AboutRestaurant = () => {
                 </section>
 
                 {/* Why Us Section */}
-                <section className="flex md:mt-0 mt-10 flex-col md:flex-row items-center md:items-center  text-right justify-center">
+                <section className="flex md:mt-0 mt-10 flex-col md:flex-row items-center md:items-center  text-left justify-center">
                     {/* Image */}
                     <div className="md:w-1/2 ">
                         <img
@@ -49,7 +52,7 @@ const AboutRestaurant = () => {
                     <div className="md:w-1/2 p-10">
                         <h2 className="text-3xl font-bold text-[#B72A23] mb-4">Why Us</h2>
                         <p className="text-gray-700 text-lg mb-4">
-                            Our menu is a testament to authentic Indian cuisine, featuring iconic dishes like Babas butter chicken, renowned for its secret homemade masalas, alongside modern favourites such as fish fry and spinach corn roll. At Babas, each dish tells a story of tradition and taste, making us a standout Indian restaurant in White Rock. Whether youre planning a cosy family dinner, a vibrant evening out, or a takeaway, Babas provides a range of dining options tailored to your preferences. We are your go-to destination for Indian cuisine in White Rock.
+                            Our menu is a testament to authentic Indian cuisine, featuring iconic dishes like Babas butter chicken, renowned for its secret homemade masalas, alongside modern favourites such as fish fry and spinach corn roll. At Babas, each dish tells a story of tradition and taste, making us a standout Indian restaurant in Abbotsford. Whether youre planning a cosy family dinner, a vibrant evening out, or a takeaway, Babas provides a range of dining options tailored to your preferences. We are your go-to destination for Indian cuisine in Abbotsford.
                         </p>
                     </div>
                 </section>

@@ -21,7 +21,7 @@ export default function HistorySection() {
                 </div>
 
                 {/* Bottom-left illustration (Girl) */}
-                <div className="absolute -bottom-24 left-4 md:bottom-8 md:left-8">
+                <div className="absolute -bottom-20 left-4 md:bottom-8 md:left-8">
                     <img
                         src="/assets/new-section/girl.png"
                         alt="Punjabi drummer"
@@ -41,7 +41,7 @@ export default function HistorySection() {
                         <span className="font-bold"> FIRST BABA&apos;S RESTAURANT</span> IN MODEL TOWN IN <span className="font-bold">1991</span>. THE
                         SECRET HOMEMADE MAGIC MASALAS MADE <span className="font-bold">BABA&apos;S BUTTER CHICKEN</span> WORLD FAMOUS.
                     </p>
-                    <p className="mt-6 text-sm md:text-lg lg:text-xl leading-relaxed tracking-wide">
+                    <p className="mt-6 mb-10 md:mb-0 lg:mb-0 text-sm md:text-lg lg:text-xl leading-relaxed tracking-wide">
                         NOW THE LEGACY IS CONTINUED BY <span className="font-bold">MR. AVNEET SINGH</span> & <span className="font-bold">HARSHMOHAN SINGH</span>
                     </p>
                 </div>

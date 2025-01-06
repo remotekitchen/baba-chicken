@@ -10,7 +10,8 @@ const FoodGrid = () => {
         { src: "/assets/update/gallery6.JPG", alt: "Grilled fish" },
         { src: "/assets/update/gallery7.JPG", alt: "Breaded cutlet" },
         { src: "/assets/update/gallery8.JPG", alt: "Grilled wings" },
-        { src: "/assets/update/gallery9.JPG", alt: "Vegetable skewers" },
+        { src: "/assets/update/updated.jpg", alt: "Grilled wings" },
+        // { src: "/assets/update/gallery9.JPG", alt: "Vegetable skewers" },
     ];
 
     return (

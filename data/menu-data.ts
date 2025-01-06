@@ -44,7 +44,7 @@ export const menuItems: any = [
     price: "14.99$",
   },
   {
-    name: "Baba’ Butter Chicken",
+    name: "Baba’s Butter Chicken",
     description:
       "A flaky, layered Indian flatbread made from whole wheat flour, rolled and cooked with ghee or butter.",
     price: "19.99$",
