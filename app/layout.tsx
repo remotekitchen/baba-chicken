@@ -38,6 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/logo2.png" sizes="any" />
       <body className={`${interFont.variable} antialiased`}>
         <Header />
         {children}
