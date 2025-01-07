@@ -34,7 +34,7 @@ export default function Hero() {
                             <div className="w-32 h-32 mx-auto  rounded-full flex items-center justify-center">
                                 <Image
                                     src="/assets/logo_icon.png"
-                                    alt="Baba's Icon"
+                                    alt="Baba"
                                     width={80}
                                     height={80}
                                     className="w-32 h-32"
