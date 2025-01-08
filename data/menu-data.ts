@@ -598,25 +598,25 @@ export const menu1 = [
         name: "Plain Rice",
         description:
           "Steamed, fluffy basmati rice, offering a simple and neutral side to pair with your favorite curries and gravies.",
-        price: "15.99$",
+        price: "5.99$",
       },
       {
         name: "Jeera Rice",
         description:
           "Aromatic basmati rice cooked with cumin seeds and light spices, offering a fragrant and flavorful twist to the traditional plain rice.",
-        price: "17.99$",
+        price: "6.99$",
       },
       {
         name: "Veg Biryani",
         description:
           "A rich and flavorful rice dish featuring basmati rice, a mix of vegetables, and aromatic spices, creating a hearty and satisfying meal.",
-        price: "16.99$",
+        price: "14.99$",
       },
       {
         name: "Chicken Biryani",
         description:
           "Fragrant basmati rice layered with marinated chicken and a mix of spices, slow-cooked to perfection for a delicious and flavorful biryani.",
-        price: "4.50$",
+        price: "16.99$",
       },
     ],
   },
