@@ -56,10 +56,9 @@ export default function Hero() {
                                 mouth-watering dishes crafted by Baba Chicken&apos;s culinary
                                 experts.
                             </p>
-                            <p className="text-white text-lg font-semibold">
-                                OPEN FOR TAKEOUT & CATERING <br />
-                                FOR ORDERS: 604-758-2222
-                            </p>
+                            {/* <p className="text-white text-lg font-semibold">
+                              
+                            </p> */}
                             <Button
                                 className="px-8 py-6 bg-[#dc2626] "
                                 onClick={() => router.push("https://order.chatchefs.com/baba-chicken-a9126f07/baba-chicken-8a71dfba/menu")}
