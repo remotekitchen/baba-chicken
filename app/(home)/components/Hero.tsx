@@ -48,14 +48,18 @@ export default function Hero() {
                             transition={{ delay: 0.3 }}
                             className="max-w-2xl mx-auto space-y-6"
                         >
-                            <p className="text-white text-lg md:text-xl leading-relaxed">
+                            <h1 className="text-white text-3xl md:text-4xl font-bold">
+                                Baba Chicken Abbotsford
+                            </h1>
+                            <p className="text-white text-lg md:text-xl font-semibold leading-relaxed">
                                 Experience the rich, authentic taste of Punjabi cuisine with
                                 mouth-watering dishes crafted by Baba Chicken&apos;s culinary
                                 experts.
                             </p>
-                            <h1 className="text-white text-3xl md:text-4xl font-bold">
-                                Baba Chicken Abbotsford
-                            </h1>
+                            <p className="text-white text-lg font-semibold">
+                                OPEN FOR TAKEOUT & CATERING <br />
+                                FOR ORDERS: 604-758-2222
+                            </p>
                             <Button
                                 className="px-8 py-6 bg-[#dc2626] "
                                 onClick={() => router.push("https://order.chatchefs.com/baba-chicken-a9126f07/baba-chicken-8a71dfba/menu")}
