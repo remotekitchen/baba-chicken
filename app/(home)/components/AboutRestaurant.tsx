@@ -14,9 +14,9 @@ const AboutRestaurant = () => {
                         <h2 className="text-3xl font-bold text-[#B72A23] mb-4">About
                             <br /> Baba-Chicken</h2>
                         <p className="text-gray-700 text-lg mb-4">
-                            Himmat Singh, fondly known as Baba Ji, started a small eatery (dhaba) in 1962. His recipes carried the authentic taste of Punjab. Later, the eatery was inherited by Mr. Kanwaljit Singh, who, along with his wife, introduced unique dishes like fish fry and spinach corn roll, which quickly became customer favorites.
-                            The overwhelming demand and love from customers led to the opening of the first BABA&apos;S Restaurant in Model Town in 1991. The secret homemade magic masalas made BABA&apos;S butter chicken world-famous. Today, the legacy is carried forward by Mr. Avneet Singh.
+                            <strong>S. Himmat Singh</strong>, who was lovingly called <strong>Baba Ji</strong>, started a small eatery (dhaba) in 1962. His recipes had the real taste of <strong>Punjab</strong> in them. Later, it was inherited by <strong>Mr. Kanwaljit Singh</strong>, who, along with his wife, introduced some unique recipes like <strong>Fish Fry</strong> and <strong>Spinach Corn Roll</strong>, which started selling like hotcakes. The huge demand and love from customers led to the opening of the first <strong>BABA&apos;S Restaurant</strong> in <strong>Model Town</strong> in 1991. The secret homemade magic masalas made <strong>BABA&apos;S Butter Chicken</strong> world-famous. Now, the legacy is continued by <strong>Mr. Avneet Singh & Harshmohan Singh</strong>.
                         </p>
+
                         {/* BABA&apos;S  */}
                         <div className='flex items-start  '>
                             <button
